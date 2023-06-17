@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "369776969253",
+    "project_id": "turf-a2a82",
+    "storage_bucket": "turf-a2a82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369776969253:android:c7a3a3c2e8964c20aa61cc",
+        "android_client_info": {
+          "package_name": "com.app.shopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369776969253-618dqlu9dmbkp9tesuejbuab9pi5qd1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB__rpek_ZtUmYeLPvScqR86gekKSgzql8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369776969253-618dqlu9dmbkp9tesuejbuab9pi5qd1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

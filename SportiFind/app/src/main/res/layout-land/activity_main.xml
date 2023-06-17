@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <View
+            android:id="@+id/night_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/night_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></View>
+
+
+        <View
+            android:id="@+id/day_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/day_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></View>
+
+
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sun"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498"></ImageView>
+
+        <ImageView
+            android:id="@+id/night_landscape"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="111dp"
+            android:src="@drawable/night_landscape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/main_join_now_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/day_landscape"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/day_landscape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"></ImageView>
+
+        <com.mahfa.dnswitch.DayNightSwitch
+            android:id="@+id/day_night_switch"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="hey"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/night_bg">
+
+        </com.mahfa.dnswitch.DayNightSwitch>
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="22dp"
+            android:text="New User? Book a turf today!"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/main_join_now_btn"
+            app:layout_constraintEnd_toEndOf="@+id/main_join_now_btn">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/main_join_now_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="62dp"
+            android:background="@drawable/button_background"
+            android:text="USER"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/main_login_btn"
+            app:layout_constraintEnd_toStartOf="@+id/night_landscape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginBottom="17dp"
+            android:text="Already Have an account?"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/main_login_btn"
+            app:layout_constraintStart_toStartOf="@+id/main_login_btn">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/main_login_btn"
+            android:layout_width="204dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="79dp"
+            android:background="@drawable/button_background"
+            android:text="ADMIN"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_join_now_btn">
+
+        </Button>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
